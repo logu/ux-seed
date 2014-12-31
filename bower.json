@@ -1,0 +1,15 @@
+{
+  "name": "sgBoilerplate",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "2.8.x",
+    "jquery": "1.x.x",
+    "bootstrap": "3.2.x"
+  },
+  "devDependencies": {
+  },
+  "resolutions": {
+    "modernizr": "2.8.x",
+    "jquery": "1.x.x"
+  }
+}
