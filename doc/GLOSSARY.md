@@ -1,3 +1,0 @@
-## Bower 
-
-A package manager : 
