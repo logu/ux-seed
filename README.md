@@ -86,7 +86,7 @@ The root directory generated for the app :
 
 ## Package managers
 
-Managing third party code and their dependencies should be performed by Package managers. Here a couple of package managers can be found a separate one for the application code (npm) and the code that is parsed by a browser engine (bower).
+Managing third party code and their dependencies should be performed by Package managers. A couple of package managers can be found here: a separate one for the application code (npm) and the code that is parsed by a browser engine (bower).
 
 ### Adding packages
 
