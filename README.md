@@ -1,4 +1,5 @@
 # UX Seed.
+
 ## Basic Starter HTML and LESS
 
 
@@ -29,38 +30,38 @@ This starter kit includes a build system by which source can be linted, tested a
 
 The root directory generated for the app :
 <pre>
-├──  sg-app/
+├──  ux-seed/
 │   ├──  app/
 │   │   ├──  images/
 │   │   ├──  data/
 │   │   ├──  scripts/
-│   │   │   ├──  components/
-|   |   |   |   ├── scripts for objects/modules
-│   │   │   ├──  modules/
-|   |   |   |   ├── scripts for pages/modules of a page
+│   │   │   ├── components/
+|   |   |   |   └── scripts for objects/modules
+│   │   │   ├── modules/
+|   |   |   |   └── scripts for pages/modules of a page
 │   │   ├──  styles/
 |   |   |   ├── base
-|   |   |   |   ├── variables, resets, mixins, global assets like fonts
+|   |   |   |   └── variables, resets, mixins, global assets like fonts
 |   |   |   ├── elements
-|   |   |   |   ├── styles for base elements (p, ul, img etc.)
+|   |   |   |   └── styles for base elements (p, ul, img etc.)
 |   |   |   ├── layout
-|   |   |   |   ├── grids, widths, utilities, etc.
+|   |   |   |   └── grids, widths, utilities, etc.
 |   |   |   ├── modules
-|   |   |   |   ├── styles for objects/modules (.sg-grid etc.)
+|   |   |   |   └── styles for objects/modules (.sg-grid etc.)
 |   |   |   ├── views
-|   |   |   |   ├── styles for pages/page modules (.homepage etc.)
-|   |   |   ├── main.less (the manifest file that pulls in all the partials and compiles into main.css)
+|   |   |   |   └── styles for pages/page modules (.homepage etc.)
+|   |   |   └── main.less (the manifest file that pulls in all the partials and compiles into main.css)
 │   │   │   ├──  vendor.less (the manifest file that pulls in all the vendor styles and compiles into vendor.css)
 │   │   ├──  404.html
 │   │   ├──  favicon.ico
-│   │   ├──  index.html
+│   │   └──  index.html
 │   ├──  doc/
 │   ├──  gulp/
-│   │   └──  build.js
-│   │   └──  e2e-tests.js
-│   │   └──  server.js
-│   │   └──  unit-tests.js
-│   │   └──  watch.js
+│   │   ├──  build.js
+│   │   ├──  e2e-tests.js
+│   │   ├──  server.js
+│   │   ├──  unit-tests.js
+│   │   ├──  watch.js
 │   │   └──  wiredep.js
 │   ├──  .bowerrc
 │   ├──  .editorconfig
@@ -68,11 +69,12 @@ The root directory generated for the app :
 │   ├──  .jshintrc
 │   ├──  bower.json
 │   ├──  gulpfile.json
-│   ├──  README.md
+│   └──  README.md
 </pre>
 
 
 ### Features included in the gulpfile
+
 * *useref* : allow configuration of your files in comments of your HTML file
 * *uglify* : optimize all your JavaScript
 * *csso* : optimize all your CSS
@@ -85,11 +87,33 @@ The root directory generated for the app :
 ## Package managers
 
 Managing third party code and their dependencies should be performed by Package managers. Here a couple of package managers can be found a separate one for the application code (npm) and the code that is parsed by a browser engine (bower).
+
+### Adding packages
+
 To install a package use the following command lines :
 ```
-bower install [package_name] -save
+# registered package
+$ bower install  [package_name] -save
+# GitHub shorthand
+$ bower install desandro/masonry -save
+# Git endpoint
+$ bower install git://github.com/user/package.git -save
+# URL
+$ bower install http://example.com/script.js -save
 
 ```
+
+### Settings
+
+In some work envirement proxy settings had to be set. Edit the ```.bowerrc ``` and add the following lines :
+```
+	"strict-ssl": false,
+
+	"proxy":"http://[login]:[password]+@[proxy]",
+	"https-proxy":"https://[login]:[password]+@[proxy]""
+```
+
+
 
 
 
