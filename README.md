@@ -39,6 +39,8 @@ The root directory generated for the app :
 |   |   |   |   └── scripts for objects/modules
 │   │   │   ├── modules/
 |   |   |   |   └── scripts for pages/modules of a page
+│   │   │   ├── views/
+|   |   |   |   └── scripts for views of a page
 │   │   ├──  styles/
 |   |   |   ├── base
 |   |   |   |   └── variables, resets, mixins, global assets like fonts
