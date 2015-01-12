@@ -39,8 +39,6 @@ The root directory generated for the app :
 |   |   |   |   └── scripts for objects/modules
 │   │   │   ├── modules/
 |   |   |   |   └── scripts for pages/modules of a page
-│   │   │   ├── views/
-|   |   |   |   └── scripts for views of a page
 │   │   ├──  styles/
 |   |   |   ├── base
 |   |   |   |   └── variables, resets, mixins, global assets like fonts
@@ -82,13 +80,13 @@ The root directory generated for the app :
 * *csso* : optimize all your CSS
 * *rev* : add a hash in the file names to prevent browser cache problems
 * *watch* : watch your source files and recompile them automatically
-* *jshint* : JavaScript code linter
+* *jshint* : JavaScript code linter. This will be the sanity check tool. It checks the JavaScript files for bad practices or JavaScript pitfalls.
 * *imagemin* : all your images will be optimized at build
 * *browser sync* : full-featured development web server with livereload and devices sync
 
 ## Package managers
 
-Managing third party code and their dependencies should be performed by Package managers. A couple of package managers can be found here: a separate one for the application code (npm) and the code that is parsed by a browser engine (bower).
+Managing third party code and their dependencies should be performed by Package managers. Here a couple of package managers can be found a separate one for the application code (npm) and the code that is parsed by a browser engine (bower).
 
 ### Adding packages
 
@@ -115,8 +113,6 @@ In some work envirement proxy settings had to be set. Edit the ```.bowerrc ``` a
 	"https-proxy":"https://[login]:[password]+@[proxy]""
 ```
 
-
-
-
-
-
+TODO:
+- Add JS doc
+- Doc each folder (Best practice CSS, Best practice JS etc.)
