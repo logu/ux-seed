@@ -1,3 +1,3 @@
 # UX Seed
 
-# Fonts
+# Images
