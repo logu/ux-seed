@@ -39,6 +39,9 @@ The root directory generated for the app :
 |   |   |   |   └── scripts for objects/modules
 │   │   │   ├── modules/
 |   |   |   |   └── scripts for pages/modules of a page
+│   │   │   ├── views/
+|   |   |   |   └── scripts for views in your page
+|   |   |   └── main.js (main file js)
 │   │   ├──  styles/
 |   |   |   ├── base
 |   |   |   |   └── variables, resets, mixins, global assets like fonts
@@ -48,10 +51,12 @@ The root directory generated for the app :
 |   |   |   |   └── grids, widths, utilities, etc.
 |   |   |   ├── modules
 |   |   |   |   └── styles for objects/modules (.sg-grid etc.)
+|   |   |   ├── components
+|   |   |   |   └── styles for objects/components
 |   |   |   ├── views
 |   |   |   |   └── styles for pages/page modules (.homepage etc.)
-|   |   |   └── main.less (the manifest file that pulls in all the partials and compiles into main.css)
-│   │   │   ├──  vendor.less (the manifest file that pulls in all the vendor styles and compiles into vendor.css)
+|   |   |   ├── main.less (the manifest file that pulls in all the partials and compiles into main.css)
+│   │   │   └──  vendor.less (the manifest file that pulls in all the vendor styles and compiles into vendor.css)
 │   │   ├──  404.html
 │   │   ├──  favicon.ico
 │   │   └──  index.html
